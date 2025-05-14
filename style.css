@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: url('https://wallpaperaccess.com/full/317501.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.status-bar {
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.homescreen {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.app-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 16px;
+  text-align: center;
+  color: white;
+  font-size: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.app-icon span {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.app-icon:active {
+  transform: scale(0.9);
+}
+
+.dock {
+  height: 70px;
+  background: rgba(255,255,255,0.2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  backdrop-filter: blur(10px);
+}
