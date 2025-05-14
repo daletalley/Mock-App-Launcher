@@ -13,10 +13,16 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
   color: white;
   display: flex;
-  justify-content: space-between;
-  padding: 0 10px;
+  justify-content: flex-end;
   align-items: center;
+  padding: 0 10px;
   font-size: 14px;
+}
+
+.status-icons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 .homescreen {
